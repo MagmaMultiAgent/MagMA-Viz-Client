@@ -67,3 +67,11 @@ The most important are the `property_name`, `step`, and `data` properties.
 - `file_name` is optional. Every few steps the sent data is saved on the backend. The `file_name` indicates the name of the saved file. If you want to save your data to compare it later under a meaningful name, this is where you can put that name
 
 The data is then pickled, compressed, and sent via UDP to the MagmaViz server where it can be displayed.
+
+### Examples
+
+Here are some examples from one of the tests inside the core repository.
+- initializing clients ([observation](https://github.com/MagmaMultiAgent/MagmaCore/blob/v0.0.1-action-per-unit/src/wrappers/obs_wrappers.py#L86), [reward](https://github.com/MagmaMultiAgent/MagmaCore/blob/v0.0.1-action-per-unit/src/train.py#L63))
+- [parsing 2 environment as rgb matrix](https://github.com/MagmaMultiAgent/MagmaCore/blob/v0.0.1-action-per-unit/src/observation/obs_parser.py#L149)
+- [sending rgb matrix](https://github.com/MagmaMultiAgent/MagmaCore/blob/v0.0.1-action-per-unit/src/wrappers/obs_wrappers.py#L96)
+- [sending reward](https://github.com/MagmaMultiAgent/MagmaCore/blob/v0.0.1-action-per-unit/src/train.py#L189)
